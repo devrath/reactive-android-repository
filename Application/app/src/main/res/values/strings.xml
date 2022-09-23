@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">code</string>
+    <string name="subjects">Subjects</string>
+    <string name="subjects_selection">Subjects Selection</string>
+    <string name="demo_selection">Demo Selection</string>
+    <!-- Strings used for fragments for navigation -->
 </resources>

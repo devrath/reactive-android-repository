@@ -3,6 +3,7 @@ package com.droid.code.subjects
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivitySubjectsSelectionBinding
+import com.droid.code.subjects.demo.asyncSubjectDemo.AsyncSubjectDemoActivity
 import com.droid.code.subjects.demo.behaviourSubjectDemo.BehaviourSubjectDemoActivity
 import com.droid.code.subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity
 import com.droid.code.subjects.demo.replaySubjectDemo.ReplaySubjectDemoActivity
@@ -30,6 +31,9 @@ class SubjectsSelectionActivity : AppCompatActivity() {
         }
         binding.btnReplaySubjectId.setOnClickListener {
             openActivity(ReplaySubjectDemoActivity::class.java)
+        }
+        binding.btnAsyncSubjectId.setOnClickListener {
+            openActivity(AsyncSubjectDemoActivity::class.java)
         }
     }
 }

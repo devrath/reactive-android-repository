@@ -43,6 +43,12 @@
             android:label="@string/replay_subject">
         </activity>
 
+        <activity
+            android:name=".subjects.demo.asyncSubjectDemo.AsyncSubjectDemoActivity"
+            android:label="@string/replay_subject">
+        </activity>
+
+
     </application>
 
 </manifest>

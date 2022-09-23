@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="@dimen/screen_padding">
 
-    <Button
-        android:id="@+id/btnPublishSubjectId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/publish_subject" />
 
     <Button
-        android:id="@+id/btnBehaviourSubjectId"
+        android:id="@+id/btnPublishId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/behaviour_subject" />
+        android:text="@string/publish_item" />
 
     <Button
-        android:id="@+id/btnReplaySubjectId"
+        android:id="@+id/btnSubscriberOneId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/replay_subject" />
+        android:text="@string/subscriber_1" />
 
     <Button
-        android:id="@+id/btnAsyncSubjectId"
+        android:id="@+id/btnSubscriberTwoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/async_subject" />
-
+        android:text="@string/subscriber_2" />
 
 </LinearLayout>

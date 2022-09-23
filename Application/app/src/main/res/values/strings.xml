@@ -8,5 +8,6 @@
     <string name="subscriber_1">Subscriber-1</string>
     <string name="subscriber_2">Subscrier-2</string>
     <string name="behaviour_subject">Behaviour Subject</string>
+    <string name="replay_subject">Replay Subject</string>
     <!-- Strings used for fragments for navigation -->
 </resources>

@@ -38,6 +38,11 @@
             android:label="@string/behaviour_subject">
         </activity>
 
+        <activity
+            android:name=".subjects.demo.replaySubjectDemo.ReplaySubjectDemoActivity"
+            android:label="@string/replay_subject">
+        </activity>
+
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivitySubjectsSelectionBinding
 import com.droid.code.subjects.demo.behaviourSubjectDemo.BehaviourSubjectDemoActivity
 import com.droid.code.subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity
+import com.droid.code.subjects.demo.replaySubjectDemo.ReplaySubjectDemoActivity
 import com.droid.code.util.openActivity
 
 class SubjectsSelectionActivity : AppCompatActivity() {
@@ -26,6 +27,9 @@ class SubjectsSelectionActivity : AppCompatActivity() {
         }
         binding.btnBehaviourSubjectId.setOnClickListener {
             openActivity(BehaviourSubjectDemoActivity::class.java)
+        }
+        binding.btnReplaySubjectId.setOnClickListener {
+            openActivity(ReplaySubjectDemoActivity::class.java)
         }
     }
 }

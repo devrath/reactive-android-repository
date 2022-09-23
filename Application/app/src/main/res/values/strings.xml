@@ -4,5 +4,8 @@
     <string name="subjects_selection">Subjects Selection</string>
     <string name="demo_selection">Demo Selection</string>
     <string name="publish_subject">Publish Subject</string>
+    <string name="publish_item">Publish Item</string>
+    <string name="subscriber_1">Subscriber-1</string>
+    <string name="subscriber_2">Subscrier-2</string>
     <!-- Strings used for fragments for navigation -->
 </resources>

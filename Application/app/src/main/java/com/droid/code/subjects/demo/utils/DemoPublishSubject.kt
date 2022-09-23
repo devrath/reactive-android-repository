@@ -8,9 +8,12 @@ class DemoPublishSubject {
 
     private val publishSubject: PublishSubject<Int> = PublishSubject.create<Int>()
 
-    fun addElement(item : Int){
-        Log.d(PROJECT_TAG,"Adding a new element".plus(" ").plus(item).plus(" ").plus("to subscriber"))
-        publishSubject.onNext(item)
+    var count : Int = 1
+
+    fun addElement(){
+        Log.d(PROJECT_TAG,"Adding a new element".plus(" ").plus(count).plus(" ").plus("to subscriber"))
+        publishSubject.onNext(count)
+        count++
     }
 
     fun subscriberOne() {

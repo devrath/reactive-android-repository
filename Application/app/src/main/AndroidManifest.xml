@@ -28,6 +28,13 @@
             android:label="@string/subjects_selection">
         </activity>
 
+        <activity
+            android:name=".subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity"
+            android:label="@string/subjects_selection">
+        </activity>
+
+
+
     </application>
 
 </manifest>

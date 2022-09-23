@@ -3,6 +3,8 @@ package com.droid.code.subjects
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivitySubjectsSelectionBinding
+import com.droid.code.subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity
+import com.droid.code.util.openActivity
 
 class SubjectsSelectionActivity : AppCompatActivity() {
 
@@ -19,7 +21,7 @@ class SubjectsSelectionActivity : AppCompatActivity() {
 
     private fun setOnClickListener() {
         binding.btnPublishSubjectId.setOnClickListener {
-
+            openActivity(PublishSubjectDemoActivity::class.java)
         }
     }
 }

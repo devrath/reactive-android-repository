@@ -6,6 +6,8 @@ import com.droid.code.databinding.ActivitySelectionBinding
 import com.droid.code.subjects.SubjectsSelectionActivity
 import com.droid.code.util.openActivity
 
+const val PROJECT_TAG = "PIKACHU"
+
 class SelectionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySelectionBinding

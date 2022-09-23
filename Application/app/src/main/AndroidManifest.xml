@@ -30,10 +30,13 @@
 
         <activity
             android:name=".subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity"
-            android:label="@string/subjects_selection">
+            android:label="@string/publish_subject">
         </activity>
 
-
+        <activity
+            android:name=".subjects.demo.behaviourSubjectDemo.BehaviourSubjectDemoActivity"
+            android:label="@string/behaviour_subject">
+        </activity>
 
     </application>
 

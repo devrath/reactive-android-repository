@@ -1,12 +1,14 @@
-package com.droid.code.subjects.demo.utils
+package com.droid.code.subjects.demo.publishSubjectDemo
 
 import android.util.Log
 import com.droid.code.PROJECT_TAG
+import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.subjects.PublishSubject
 
 class DemoPublishSubject {
 
     private val publishSubject: PublishSubject<Int> = PublishSubject.create<Int>()
+    private val subscriptions = CompositeDisposable()
 
     var count : Int = 1
 
@@ -17,15 +19,19 @@ class DemoPublishSubject {
     }
 
     fun subscriberOne() {
-        publishSubject.subscribe {
+        val dispose = publishSubject.subscribe {
             Log.d(PROJECT_TAG,"Subscriber-1".plus("<---->").plus(it.toString()))
         }
+        subscriptions.add(dispose)
     }
 
     fun subscriberTwo() {
-        publishSubject.subscribe {
+        val dispose = publishSubject.subscribe {
             Log.d(PROJECT_TAG,"Subscriber-2".plus("<---->").plus(it.toString()))
         }
+        subscriptions.add(dispose)
     }
+
+    fun disposeAll(){ subscriptions.dispose() }
 
 }

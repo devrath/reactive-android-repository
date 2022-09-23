@@ -13,7 +13,13 @@ class SubjectsSelectionActivity : AppCompatActivity() {
 
         binding = ActivitySubjectsSelectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setOnClickListener()
 
     }
 
+    private fun setOnClickListener() {
+        binding.btnPublishSubjectId.setOnClickListener {
+
+        }
+    }
 }

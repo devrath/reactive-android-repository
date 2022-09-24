@@ -1,17 +1,19 @@
-package com.droid.code.subjects.demo.replaySubjectDemo
+package com.droid.code.subjects.demo.operators.behaviourSubjectDemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.droid.code.databinding.ActivityBehaviourSubjectBinding
 import com.droid.code.databinding.ActivityPublishSubjectDemoBinding
+import com.droid.code.subjects.demo.operators.publishSubjectDemo.DemoPublishSubject
 
-class ReplaySubjectDemoActivity : AppCompatActivity() {
+class BehaviourSubjectDemoActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityPublishSubjectDemoBinding
-    private val demo = DemoReplaySubject()
+    private val demo = DemoBehaviourSubject()
+    private lateinit var binding: ActivityBehaviourSubjectBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPublishSubjectDemoBinding.inflate(layoutInflater)
+        binding = ActivityBehaviourSubjectBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setOnClickListener()
     }

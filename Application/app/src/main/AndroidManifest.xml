@@ -29,23 +29,28 @@
         </activity>
 
         <activity
-            android:name=".subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity"
+            android:name=".subjects.demo.operators.publishSubjectDemo.PublishSubjectDemoActivity"
             android:label="@string/publish_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.behaviourSubjectDemo.BehaviourSubjectDemoActivity"
+            android:name=".subjects.demo.operators.behaviourSubjectDemo.BehaviourSubjectDemoActivity"
             android:label="@string/behaviour_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.replaySubjectDemo.ReplaySubjectDemoActivity"
+            android:name=".subjects.demo.operators.replaySubjectDemo.ReplaySubjectDemoActivity"
             android:label="@string/replay_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.asyncSubjectDemo.AsyncSubjectDemoActivity"
+            android:name=".subjects.demo.operators.asyncSubjectDemo.AsyncSubjectDemoActivity"
             android:label="@string/replay_subject">
+        </activity>
+
+        <activity
+            android:name=".subjects.demo.implementationDemo.collageDemo.CollageDemoActivity"
+            android:label="@string/collage_demo">
         </activity>
 
 

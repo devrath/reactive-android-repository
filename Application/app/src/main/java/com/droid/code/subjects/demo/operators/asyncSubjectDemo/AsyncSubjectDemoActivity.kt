@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.asyncSubjectDemo
+package com.droid.code.subjects.demo.operators.asyncSubjectDemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

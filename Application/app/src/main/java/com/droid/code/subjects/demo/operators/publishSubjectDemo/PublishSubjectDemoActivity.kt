@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.publishSubjectDemo
+package com.droid.code.subjects.demo.operators.publishSubjectDemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -3,10 +3,11 @@ package com.droid.code.subjects
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivitySubjectsSelectionBinding
-import com.droid.code.subjects.demo.asyncSubjectDemo.AsyncSubjectDemoActivity
-import com.droid.code.subjects.demo.behaviourSubjectDemo.BehaviourSubjectDemoActivity
-import com.droid.code.subjects.demo.publishSubjectDemo.PublishSubjectDemoActivity
-import com.droid.code.subjects.demo.replaySubjectDemo.ReplaySubjectDemoActivity
+import com.droid.code.subjects.demo.implementationDemo.collageDemo.CollageDemoActivity
+import com.droid.code.subjects.demo.operators.asyncSubjectDemo.AsyncSubjectDemoActivity
+import com.droid.code.subjects.demo.operators.behaviourSubjectDemo.BehaviourSubjectDemoActivity
+import com.droid.code.subjects.demo.operators.publishSubjectDemo.PublishSubjectDemoActivity
+import com.droid.code.subjects.demo.operators.replaySubjectDemo.ReplaySubjectDemoActivity
 import com.droid.code.util.openActivity
 
 class SubjectsSelectionActivity : AppCompatActivity() {
@@ -34,6 +35,10 @@ class SubjectsSelectionActivity : AppCompatActivity() {
         }
         binding.btnAsyncSubjectId.setOnClickListener {
             openActivity(AsyncSubjectDemoActivity::class.java)
+        }
+
+        binding.btnPhotoCollageDemoId.setOnClickListener {
+            openActivity(CollageDemoActivity::class.java)
         }
     }
 }

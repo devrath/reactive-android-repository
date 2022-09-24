@@ -1,14 +1,14 @@
-package com.droid.code.subjects.demo.asyncSubjectDemo
+package com.droid.code.subjects.demo.operators.replaySubjectDemo
 
 import android.util.Log
 import com.droid.code.PROJECT_TAG
 import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.subjects.AsyncSubject
+import io.reactivex.rxjava3.subjects.PublishSubject
 import io.reactivex.rxjava3.subjects.ReplaySubject
 
-class DemoAsyncSubject {
+class DemoReplaySubject {
 
-    private val publishSubject: AsyncSubject<Int> = AsyncSubject.create<Int>()
+    private val publishSubject: ReplaySubject<Int> = ReplaySubject.createWithSize<Int>(3)
     private val subscriptions = CompositeDisposable()
 
     var count : Int = 1

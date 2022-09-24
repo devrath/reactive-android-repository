@@ -10,5 +10,19 @@
     <string name="behaviour_subject">Behaviour Subject</string>
     <string name="replay_subject">Replay Subject</string>
     <string name="async_subject">Async Subject</string>
+    <string name="subject_operators">Subject Operators</string>
+    <string name="android_demo_1">Android Demo</string>
+    <string name="photo_collage_demo">Photo Collage Demo</string>
     <!-- Strings used for fragments for navigation -->
+    <string name="bottom_sheet_option_camera">Use Camera</string>
+    <string name="bottom_sheet_option_gallery">Upload from Gallery</string>
+    <string name="bottom_sheet_option_heading">Add Photo</string>
+    <string name="bottom_sheet_option_remove_photo">Remove Photo</string>
+    <string name="photo">photo</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="collage">Collage</string>
+    <string name="add">Add</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="collage_demo">Collage Demo</string>
 </resources>

@@ -1,4 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="screen_padding">10dp</dimen>
+    <dimen name="header_size">20sp</dimen>
+    <dimen name="space_width">40dp</dimen>
 </resources>

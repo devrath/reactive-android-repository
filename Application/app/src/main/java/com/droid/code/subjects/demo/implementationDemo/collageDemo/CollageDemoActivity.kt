@@ -31,23 +31,15 @@ class CollageDemoActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_collage_main)
-
     title = getString(R.string.collage)
+    viewModel = ViewModelProvider(this)[SharedViewModel::class.java]
+    // Set the click listeners
+    setClickListeners()
+    // Set Observers
+    setObservers()
+  }
 
-    viewModel = ViewModelProvider(this).get(SharedViewModel::class.java)
-
-    addButton.setOnClickListener {
-      actionAdd()
-    }
-
-    clearButton.setOnClickListener {
-      actionClear()
-    }
-
-    saveButton.setOnClickListener {
-      actionSave()
-    }
-
+  private fun setObservers() {
     viewModel.getSelectedPhotos().observe(this, Observer { photos ->
       photos?.let { _ ->
         if (photos.isNotEmpty()) {
@@ -59,20 +51,39 @@ class CollageDemoActivity : AppCompatActivity() {
         }
         updateUi(photos)
       }
-    })
-
+      })
   }
+
+  /**
+   * Set click listeners for the buttons
+   */
+  private fun setClickListeners() {
+    addButton.setOnClickListener { actionAdd() }
+    clearButton.setOnClickListener { actionClear() }
+    saveButton.setOnClickListener { actionSave() }
+  }
+
+  /**
+   * ACTION: Add
+   */
   private fun actionAdd() {
+    // Display the bottom sheet dialog
     val addPhotoBottomDialogFragment = PhotosBottomDialogFragment.newInstance()
     addPhotoBottomDialogFragment.show(supportFragmentManager, PhotosBottomDialogFragment::class.java.name)
-    viewModel.subscribeSelectedPhotos(
-      addPhotoBottomDialogFragment.selectedPhotos)
+    // After displaying bottom sheet Subscribe to the adapter observable data
+    viewModel.subscribeSelectedPhotos(addPhotoBottomDialogFragment.selectedPhotos)
   }
 
+  /**
+   * ACTION: Clear
+   */
   private fun actionClear() {
     viewModel.clearPhotos()
   }
 
+  /**
+   * ACTION: Save
+   */
   private fun actionSave() {
     progressBar.visibility = View.VISIBLE
     viewModel.saveBitmapFromImageView(collageImage, applicationContext)
@@ -90,6 +101,9 @@ class CollageDemoActivity : AppCompatActivity() {
       )
   }
 
+  /**
+   * Handle UI-states
+   */
   private fun updateUi(photos: List<Photo>) {
     saveButton.isEnabled = photos.isNotEmpty() && (photos.size % 2 == 0)
     clearButton.isEnabled = photos.isNotEmpty()
@@ -100,4 +114,5 @@ class CollageDemoActivity : AppCompatActivity() {
       getString(R.string.collage)
     }
   }
+
 }

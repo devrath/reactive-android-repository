@@ -31,27 +31,39 @@ class SharedViewModel : ViewModel() {
 
 
   init {
+    // Here when the view model is started, we subscribe to the  image subject
     imagesSubject.subscribe { photos ->
+      // Here we add values to the live data when the subscriber is triggered
       selectedPhotos.value = photos
-    }.addTo(disposables)
+    }.addTo(disposables) // Using this extension function, we add the subscriber to disposables
   }
 
-  override fun onCleared() {
-    disposables.dispose()
-    super.onCleared()
-  }
-
+  /**
+   * The view layer keeps listening to the changes in live data in view model
+   */
   fun getSelectedPhotos(): LiveData<List<Photo>> {
     return selectedPhotos
   }
 
+  /**
+   * Control will come from::
+   * <*> Adapter of bottom sheet to fragment of bottom sheet via callback.
+   * <*> OnNext of the observable is triggered in the fragment o bottom sheet.
+   * <*> It is linked to view-model of activity via a function in activity.
+   * <*> In the activity we use the adapter reference to refer the fragment observable
+   * <*> Now when the observable is bottom sheet is triggered on adding the image below function is called
+   */
   fun subscribeSelectedPhotos(selectedPhotos: Observable<Photo>) {
     selectedPhotos
       .doOnComplete {
+        // When the bottom sheet dialog is destroyed -> this complete action is triggered
         Log.v("SharedViewModel", "Completed selecting photos")
       }
       .subscribe { photo ->
+        // When new image is added
+        // <*> --> we add it to the behaviour subject
         imagesSubject.value?.add(photo)
+        // <*> --> we trigger the behaviour subject
         imagesSubject.onNext(imagesSubject.value ?: mutableListOf())
       }
       .addTo(disposables)
@@ -86,6 +98,12 @@ class SharedViewModel : ViewModel() {
         observer.onError(e)
       }
     }
+  }
+
+
+  override fun onCleared() {
+    disposables.dispose()
+    super.onCleared()
   }
 
 }

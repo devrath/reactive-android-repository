@@ -18,7 +18,7 @@ class PhotosBottomDialogFragment : BottomSheetDialogFragment(), PhotosAdapter.Ph
   private lateinit var viewModel: SharedViewModel
 
   private val selectedPhotosSubject = PublishSubject.create<Photo>()
-
+  // Hide method returns the observable method of same object
   val selectedPhotos: Observable<Photo> = selectedPhotosSubject.hide()
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -27,18 +27,12 @@ class PhotosBottomDialogFragment : BottomSheetDialogFragment(), PhotosAdapter.Ph
 
   override fun onActivityCreated(savedInstanceState: Bundle?) {
     super.onActivityCreated(savedInstanceState)
-
-    val ctx = activity
-    ctx?.let {
-      viewModel = ViewModelProvider(ctx).get(SharedViewModel::class.java)
-    }
+    setUpViewModel()
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-
-    photosRecyclerView.layoutManager = GridLayoutManager(context, 3)
-    photosRecyclerView.adapter = PhotosAdapter(PhotoStore.photos, this)
+    setUpTheList()
   }
 
   override fun onDestroyView() {
@@ -48,6 +42,16 @@ class PhotosBottomDialogFragment : BottomSheetDialogFragment(), PhotosAdapter.Ph
 
   override fun photoClicked(photo: Photo) {
     selectedPhotosSubject.onNext(photo)
+  }
+
+  private fun setUpViewModel() {
+    val ctx = activity
+    ctx?.let { viewModel = ViewModelProvider(ctx)[SharedViewModel::class.java] }
+  }
+
+  private fun setUpTheList() {
+    photosRecyclerView.layoutManager = GridLayoutManager(context, 3)
+    photosRecyclerView.adapter = PhotosAdapter(PhotoStore.photos, this)
   }
 
   companion object {

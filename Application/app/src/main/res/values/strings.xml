@@ -26,8 +26,10 @@
     <string name="save">Save</string>
     <string name="collage_demo">Collage Demo</string>
     <string name="special_observables">Special Observables</string>
-    <string name="single_observable">Single Observable</string>
     <string name="completable_observable">Completable Observable</string>
     <string name="maybe_observable">Maybe Observable</string>
     <string name="special_observable">Special Observable Demos</string>
+    <string name="single_observable">Single Observable Demo</string>
+    <string name="completable_observe">Completable Observable Demo</string>
+    <string name="maybe_observe">Maybe Observable Demo</string>
 </resources>

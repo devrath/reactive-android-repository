@@ -59,6 +59,20 @@
             android:label="@string/special_observable">
         </activity>
 
+        <activity
+            android:name=".specialObservables.singleObservable.SingleObservableActivity"
+            android:label="@string/single_observable">
+        </activity>
+
+        <activity
+            android:name=".specialObservables.completableObservable.CompletableObservableActivity"
+            android:label="@string/completable_observe">
+        </activity>
+
+        <activity
+            android:name=".specialObservables.maybeObservable.MaybeObservableActivity"
+            android:label="@string/maybe_observe">
+        </activity>
 
     </application>
 

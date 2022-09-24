@@ -1,13 +1,13 @@
-package com.droid.code.subjects.demo.operators.replaySubjectDemo
+package com.droid.code.subjects.asyncSubjectDemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityPublishSubjectDemoBinding
 
-class ReplaySubjectDemoActivity : AppCompatActivity() {
+class AsyncSubjectDemoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPublishSubjectDemoBinding
-    private val demo = DemoReplaySubject()
+    private val demo = DemoAsyncSubject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

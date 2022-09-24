@@ -30,28 +30,33 @@
         </activity>
 
         <activity
-            android:name=".subjects.demo.operators.publishSubjectDemo.PublishSubjectDemoActivity"
+            android:name=".subjects.publishSubjectDemo.PublishSubjectDemoActivity"
             android:label="@string/publish_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.operators.behaviourSubjectDemo.BehaviourSubjectDemoActivity"
+            android:name=".subjects.behaviourSubjectDemo.BehaviourSubjectDemoActivity"
             android:label="@string/behaviour_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.operators.replaySubjectDemo.ReplaySubjectDemoActivity"
+            android:name=".subjects.replaySubjectDemo.ReplaySubjectDemoActivity"
             android:label="@string/replay_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.operators.asyncSubjectDemo.AsyncSubjectDemoActivity"
+            android:name=".subjects.asyncSubjectDemo.AsyncSubjectDemoActivity"
             android:label="@string/replay_subject">
         </activity>
 
         <activity
-            android:name=".subjects.demo.implementationDemo.collageDemo.CollageDemoActivity"
+            android:name=".fullImplementations.collageDemo.CollageDemoActivity"
             android:label="@string/collage_demo">
+        </activity>
+
+        <activity
+            android:name=".specialObservables.SpecialObservableSelectionActivity"
+            android:label="@string/special_observable">
         </activity>
 
 

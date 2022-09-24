@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.implementationDemo.collageDemo.components
+package com.droid.code.fullImplementations.collageDemo.components
 
 import com.droid.code.R
 
@@ -19,7 +19,6 @@ object PhotoStore {
     photos.add(Photo(R.drawable.image10))
     photos.add(Photo(R.drawable.image11))
     photos.add(Photo(R.drawable.image12))
-    photos.add(Photo(R.drawable.image13))
 
     photos
   }

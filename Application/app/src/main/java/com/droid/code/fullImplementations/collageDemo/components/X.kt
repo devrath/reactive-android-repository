@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.implementationDemo.collageDemo.components
+package com.droid.code.fullImplementations.collageDemo.components
 
 import android.graphics.Bitmap
 import android.graphics.Canvas

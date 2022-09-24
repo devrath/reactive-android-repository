@@ -14,6 +14,11 @@
             android:gravity="center"
             android:orientation="vertical">
             <Button
+                android:id="@+id/specialObservablesId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/special_observables" />
+            <Button
                 android:id="@+id/subjectsId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

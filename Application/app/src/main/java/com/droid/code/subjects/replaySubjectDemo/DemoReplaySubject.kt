@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.operators.replaySubjectDemo
+package com.droid.code.subjects.replaySubjectDemo
 
 import android.util.Log
 import com.droid.code.PROJECT_TAG

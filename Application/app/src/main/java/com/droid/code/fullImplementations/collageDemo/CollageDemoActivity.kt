@@ -1,4 +1,4 @@
-package com.droid.code.subjects.demo.implementationDemo.collageDemo
+package com.droid.code.fullImplementations.collageDemo
 
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
@@ -9,11 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.droid.code.R
-import com.droid.code.subjects.demo.implementationDemo.collageDemo.components.Photo
-import com.droid.code.subjects.demo.implementationDemo.collageDemo.components.PhotoStore
-import com.droid.code.subjects.demo.implementationDemo.collageDemo.components.PhotosBottomDialogFragment
-import com.droid.code.subjects.demo.implementationDemo.collageDemo.components.SharedViewModel
-import com.droid.code.subjects.demo.implementationDemo.collageDemo.components.combineImages
+import com.droid.code.fullImplementations.collageDemo.components.Photo
+import com.droid.code.fullImplementations.collageDemo.components.PhotosBottomDialogFragment
+import com.droid.code.fullImplementations.collageDemo.components.SharedViewModel
+import com.droid.code.fullImplementations.collageDemo.components.combineImages
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.kotlin.subscribeBy
 import io.reactivex.rxjava3.schedulers.Schedulers

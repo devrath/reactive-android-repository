@@ -1,13 +1,13 @@
-package com.droid.code.subjects.demo.operators.asyncSubjectDemo
+package com.droid.code.subjects.publishSubjectDemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityPublishSubjectDemoBinding
 
-class AsyncSubjectDemoActivity : AppCompatActivity() {
+class PublishSubjectDemoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPublishSubjectDemoBinding
-    private val demo = DemoAsyncSubject()
+    private val demo = DemoPublishSubject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

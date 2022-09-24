@@ -32,4 +32,7 @@
     <string name="single_observable">Single Observable Demo</string>
     <string name="completable_observe">Completable Observable Demo</string>
     <string name="maybe_observe">Maybe Observable Demo</string>
+    <string name="publish_error">Error</string>
+    <string name="publish_complete">Complete</string>
+    <string name="subscribe">Subscribe</string>
 </resources>

@@ -19,6 +19,17 @@ class SingleObservableActivity : AppCompatActivity() {
     }
 
     private fun setOnClickListener() {
+        binding.btnPublishId.setOnClickListener {
 
+        }
+        binding.btnSubscribeId.setOnClickListener {
+
+        }
+        binding.btnPublishErrorId.setOnClickListener {
+
+        }
+        binding.btnPublishCompleteId.setOnClickListener {
+
+        }
     }
 }

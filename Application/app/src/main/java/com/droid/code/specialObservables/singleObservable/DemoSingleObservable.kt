@@ -1,12 +1,11 @@
-package com.droid.code.subjects.replaySubjectDemo
+package com.droid.code.specialObservables.singleObservable
 
 import android.util.Log
 import com.droid.code.PROJECT_TAG
 import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.subjects.PublishSubject
 import io.reactivex.rxjava3.subjects.ReplaySubject
 
-class DemoReplaySubject {
+class DemoSingleObservable {
 
     private val publishSubject: ReplaySubject<Int> = ReplaySubject.createWithSize<Int>(3)
     private val subscriptions = CompositeDisposable()

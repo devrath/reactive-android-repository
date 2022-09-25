@@ -37,4 +37,5 @@
     <string name="subscribe">Subscribe</string>
     <string name="subscribe_for_success">Subscribe for success</string>
     <string name="subscribe_for_failure">Subscribe for failure</string>
+    <string name="subscribe_for_completion">Subscribe for completion</string>
 </resources>

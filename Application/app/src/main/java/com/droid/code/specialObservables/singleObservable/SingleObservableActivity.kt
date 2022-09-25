@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.PROJECT_TAG
 import com.droid.code.databinding.ActivityObservableSingleBinding
+import io.reactivex.rxjava3.kotlin.addTo
 import io.reactivex.rxjava3.schedulers.Schedulers
 
 class SingleObservableActivity : AppCompatActivity() {
@@ -30,7 +31,7 @@ class SingleObservableActivity : AppCompatActivity() {
                     Log.d(PROJECT_TAG,it.toString())
                 }, {
                     Log.d(PROJECT_TAG,it.message.toString())
-                })
+                })?.addTo(data.addSubscription())
         }
 
         binding.btnFailureId.setOnClickListener {
@@ -40,7 +41,7 @@ class SingleObservableActivity : AppCompatActivity() {
                     Log.d(PROJECT_TAG,it.toString())
                 }, {
                     Log.d(PROJECT_TAG,it.message.toString())
-                })
+                })?.addTo(data.addSubscription())
         }
     }
 

@@ -18,7 +18,6 @@ class DemoMaybeObservable {
         }
 
         emitter.onSuccess(sum)
-        //emitter.onError(RuntimeException("Some custom exception"))
     }
 
     private val failureScenario = Maybe.create { emitter ->
@@ -40,7 +39,6 @@ class DemoMaybeObservable {
             Thread.sleep(500L)
             sum += i
         }
-        // complete is called prior to success
         emitter.onComplete()
 
         emitter.onSuccess(sum)

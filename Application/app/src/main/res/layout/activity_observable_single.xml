@@ -6,24 +6,24 @@
     android:orientation="vertical"
     android:padding="@dimen/screen_padding">
 
-
     <Button
-        android:id="@+id/btnPublishId"
+        android:id="@+id/btnSuccessId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/publish_item" />
+        android:text="@string/subscribe_for_success" />
 
     <Button
-        android:id="@+id/btnSubscribeId"
+        android:id="@+id/btnFailureId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/subscribe" />
+        android:text="@string/subscribe_for_failure" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:visibility="gone"
         android:orientation="horizontal"
         android:padding="@dimen/screen_padding">
 

@@ -1,13 +1,17 @@
 package com.droid.code.specialObservables.singleObservable
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.droid.code.PROJECT_TAG
 import com.droid.code.databinding.ActivityObservableSingleBinding
-import com.droid.code.databinding.ActivitySpecialObservableSelectionBinding
+import io.reactivex.rxjava3.schedulers.Schedulers
 
 class SingleObservableActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityObservableSingleBinding
+
+    private val data = DemoSingleObservable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,17 +23,29 @@ class SingleObservableActivity : AppCompatActivity() {
     }
 
     private fun setOnClickListener() {
-        binding.btnPublishId.setOnClickListener {
-
+        binding.btnSuccessId.setOnClickListener {
+            data.getSuccessObservable()
+                ?.observeOn(Schedulers.io())
+                ?.subscribe({
+                    Log.d(PROJECT_TAG,it.toString())
+                }, {
+                    Log.d(PROJECT_TAG,it.message.toString())
+                })
         }
-        binding.btnSubscribeId.setOnClickListener {
 
+        binding.btnFailureId.setOnClickListener {
+            data.getFailureObservable()
+                ?.observeOn(Schedulers.io())
+                ?.subscribe({
+                    Log.d(PROJECT_TAG,it.toString())
+                }, {
+                    Log.d(PROJECT_TAG,it.message.toString())
+                })
         }
-        binding.btnPublishErrorId.setOnClickListener {
+    }
 
-        }
-        binding.btnPublishCompleteId.setOnClickListener {
-
-        }
+    override fun onDestroy() {
+        super.onDestroy()
+        data.disposeAll()
     }
 }

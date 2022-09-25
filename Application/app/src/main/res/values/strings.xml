@@ -35,4 +35,6 @@
     <string name="publish_error">Error</string>
     <string name="publish_complete">Complete</string>
     <string name="subscribe">Subscribe</string>
+    <string name="subscribe_for_success">Subscribe for success</string>
+    <string name="subscribe_for_failure">Subscribe for failure</string>
 </resources>

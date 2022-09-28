@@ -3,10 +3,13 @@ package com.droid.code.operators.filterOperators.operators.distinctUntilChangedC
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityDistinctUntilChangedCustomBinding
+import com.droid.code.operators.filterOperators.operators.distinctUntilChangedNormal.OperatorDistinctNormal
 
 class DemoDistinctUntilChangedCustomActivity  : AppCompatActivity() {
 
     private lateinit var binding: ActivityDistinctUntilChangedCustomBinding
+
+    private val demo = OperatorDistinctCustom()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,11 +19,13 @@ class DemoDistinctUntilChangedCustomActivity  : AppCompatActivity() {
     }
 
     private fun setOnClickListeners() {
-        /* binding.distinctNormalOprId.setOnClickListener {
+        binding.initiateId.setOnClickListener {
+            demo.addValuesForObservable()
+        }
+    }
 
-         }
-         binding.distinctNormalCustId.setOnClickListener {
-
-         }*/
+    override fun onDestroy() {
+        super.onDestroy()
+        demo.disposeAll()
     }
 }

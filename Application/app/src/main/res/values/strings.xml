@@ -38,4 +38,12 @@
     <string name="subscribe_for_success">Subscribe for success</string>
     <string name="subscribe_for_failure">Subscribe for failure</string>
     <string name="subscribe_for_completion">Subscribe for completion</string>
+    <string name="operators">Operators</string>
+    <string name="operators_selection">Operators Selection</string>
+    <string name="filter_operators">Filter Operators</string>
+    <string name="transforming_operators">Transforming Operators</string>
+    <string name="combining_operators">Combining Operators</string>
+    <string name="filter_operators_selection">Filter Operators Selection</string>
+    <string name="distinct_until_changed_normal">Distinct Until Changed Normal</string>
+    <string name="distinct_until_changed_custom">Distinct Until Changed Custom</string>
 </resources>

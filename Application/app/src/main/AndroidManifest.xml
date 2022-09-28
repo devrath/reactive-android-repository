@@ -74,6 +74,26 @@
             android:label="@string/maybe_observe">
         </activity>
 
+        <activity
+            android:name=".operators.OperatorsSelectionActivity"
+            android:label="@string/operators_selection">
+        </activity>
+
+        <activity
+            android:name=".operators.filterOperators.FilterOperatorsSelectionActivity"
+            android:label="@string/filter_operators_selection">
+        </activity>
+
+        <activity
+            android:name=".operators.filterOperators.operators.distinctUntilChangedNormal.DemoDistinctUntilChangedNormalActivity"
+            android:label="@string/distinct_until_changed_normal">
+        </activity>
+
+        <activity
+            android:name=".operators.filterOperators.operators.distinctUntilChangedCustom.DemoDistinctUntilChangedCustomActivity"
+            android:label="@string/distinct_until_changed_custom">
+        </activity>
+
     </application>
 
 </manifest>

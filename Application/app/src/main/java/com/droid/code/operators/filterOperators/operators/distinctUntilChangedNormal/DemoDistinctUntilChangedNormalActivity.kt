@@ -8,6 +8,8 @@ class DemoDistinctUntilChangedNormalActivity  : AppCompatActivity() {
 
     private lateinit var binding: ActivityDistinctUntilChangedNormalBinding
 
+    private val demo = OperatorDistinctNormal()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDistinctUntilChangedNormalBinding.inflate(layoutInflater)
@@ -16,11 +18,13 @@ class DemoDistinctUntilChangedNormalActivity  : AppCompatActivity() {
     }
 
     private fun setOnClickListeners() {
-       /* binding.distinctNormalOprId.setOnClickListener {
-
+        binding.initiateId.setOnClickListener {
+            demo.addValuesForObservable()
         }
-        binding.distinctNormalCustId.setOnClickListener {
+    }
 
-        }*/
+    override fun onDestroy() {
+        super.onDestroy()
+        demo.disposeAll()
     }
 }

@@ -10,7 +10,7 @@ class FlatmapActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFlatmapBinding
 
-    private val demo = OperatorDistinctCustom()
+    private val demo = FlatMapSource()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +20,13 @@ class FlatmapActivity : AppCompatActivity() {
     }
 
     private fun setOnClickListeners() {
+        binding.btnInitiateId.setOnClickListener {
+            demo.subscribeDemo()
+        }
+    }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        demo.disposeAll()
     }
 }

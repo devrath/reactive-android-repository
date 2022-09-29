@@ -47,4 +47,9 @@
     <string name="distinct_until_changed_normal">Distinct Until Changed Normal</string>
     <string name="distinct_until_changed_custom">Distinct Until Changed Custom</string>
     <string name="initiate">initiate</string>
+    <string name="transform_operators_selection">Transform Operators Selection</string>
+    <string name="flat_map_operator">Flat map operator</string>
+    <string name="switch_map_operator">Switch map operator</string>
+    <string name="flat_map_activity">FlatMap operator</string>
+    <string name="switch_map_activity">SwitchMap operator</string>
 </resources>

@@ -94,6 +94,22 @@
             android:label="@string/distinct_until_changed_custom">
         </activity>
 
+        <activity
+            android:name=".operators.transformOperators.TransformOperatorsSelectionActivity"
+            android:label="@string/transform_operators_selection">
+        </activity>
+
+        <activity
+            android:name=".operators.transformOperators.operators.flatmapOperator.FlatmapActivity"
+            android:label="@string/flat_map_activity">
+        </activity>
+
+        <activity
+            android:name=".operators.transformOperators.operators.switchmapOperator.SwitchMapActivity"
+            android:label="@string/switch_map_activity">
+        </activity>
+
+
     </application>
 
 </manifest>

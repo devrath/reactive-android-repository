@@ -7,6 +7,7 @@ import com.droid.code.databinding.ActivityTransformOperatorsSelectionBinding
 import com.droid.code.operators.filterOperators.operators.distinctUntilChangedCustom.DemoDistinctUntilChangedCustomActivity
 import com.droid.code.operators.filterOperators.operators.distinctUntilChangedNormal.DemoDistinctUntilChangedNormalActivity
 import com.droid.code.operators.transformOperators.operators.flatmapOperator.FlatmapActivity
+import com.droid.code.operators.transformOperators.operators.materializeOperator.MaterializeActivity
 import com.droid.code.operators.transformOperators.operators.switchmapOperator.SwitchMapActivity
 import com.droid.code.util.openActivity
 
@@ -27,6 +28,9 @@ class TransformOperatorsSelectionActivity  : AppCompatActivity() {
         }
         binding.btnSwitchMapOperatorId.setOnClickListener {
             openActivity(SwitchMapActivity::class.java)
+        }
+        binding.btnMaterializeOperatorId.setOnClickListener {
+            openActivity(MaterializeActivity::class.java)
         }
     }
 

@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:text="@string/switch_map_operator" />
 
+    <Button
+        android:id="@+id/btnMaterializeOperatorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/materialize_operator" />
+
+
 </LinearLayout>

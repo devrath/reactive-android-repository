@@ -109,6 +109,13 @@
             android:label="@string/switch_map_activity">
         </activity>
 
+        <activity
+            android:name=".operators.transformOperators.operators.materializeOperator.MaterializeActivity"
+            android:label="@string/materialize_operator">
+        </activity>
+
+
+
 
     </application>
 

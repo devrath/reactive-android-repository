@@ -52,4 +52,5 @@
     <string name="switch_map_operator">Switch map operator</string>
     <string name="flat_map_activity">FlatMap operator</string>
     <string name="switch_map_activity">SwitchMap operator</string>
+    <string name="materialize_operator">Materialize Operator</string>
 </resources>

@@ -25,7 +25,7 @@ class MaterializeSource {
             .flatMap { it.age.materialize() }
             .dematerialize { it }
             .subscribe {
-                Log.d(PROJECT_TAG, "Subscriber-Triggered".plus(" ").plus(it.value))
+                Log.d(PROJECT_TAG, "Subscriber-Triggered".plus(" ").plus(it))
             }
             .addTo(subscriptions)
 

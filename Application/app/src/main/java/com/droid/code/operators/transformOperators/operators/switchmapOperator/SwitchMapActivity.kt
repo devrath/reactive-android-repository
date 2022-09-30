@@ -9,7 +9,7 @@ class SwitchMapActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySwitchmapBinding
 
-    private val demo = OperatorDistinctCustom()
+    private val demo = SwitchMapSource()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,9 @@ class SwitchMapActivity : AppCompatActivity() {
     }
 
     private fun setOnClickListeners() {
-
+        binding.btnInitiateId.setOnClickListener {
+            demo.subscribeDemo()
+        }
     }
 
 }

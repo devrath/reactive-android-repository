@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityFilterOperatorsSelectionBinding
 import com.droid.code.databinding.ActivityTransformOperatorsSelectionBinding
+import com.droid.code.fullImplementations.gitFeedDemo.GitFeedActivity
 import com.droid.code.operators.filterOperators.operators.distinctUntilChangedCustom.DemoDistinctUntilChangedCustomActivity
 import com.droid.code.operators.filterOperators.operators.distinctUntilChangedNormal.DemoDistinctUntilChangedNormalActivity
 import com.droid.code.operators.transformOperators.operators.flatmapOperator.FlatmapActivity
@@ -31,6 +32,9 @@ class TransformOperatorsSelectionActivity  : AppCompatActivity() {
         }
         binding.btnMaterializeOperatorId.setOnClickListener {
             openActivity(MaterializeActivity::class.java)
+        }
+        binding.btnGitFeedId.setOnClickListener {
+            openActivity(GitFeedActivity::class.java)
         }
     }
 

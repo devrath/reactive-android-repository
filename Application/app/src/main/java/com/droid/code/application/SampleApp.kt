@@ -1,6 +1,7 @@
 package com.droid.code.application
 
 import android.app.Application
+import android.content.Context
 import android.util.Log
 import io.reactivex.rxjava3.exceptions.UndeliverableException
 import io.reactivex.rxjava3.plugins.RxJavaPlugins
@@ -10,7 +11,14 @@ import io.reactivex.rxjava3.plugins.RxJavaPlugins
 
 class SampleApp : Application() {
 
+    companion object {
+        private lateinit var instance: SampleApp
+
+        fun getAppContext(): Context = instance.applicationContext
+    }
+
     override fun onCreate() {
+        instance = this
         super.onCreate()
         catchApplicationError()
     }

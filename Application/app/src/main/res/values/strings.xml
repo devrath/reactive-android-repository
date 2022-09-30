@@ -53,4 +53,8 @@
     <string name="flat_map_activity">FlatMap operator</string>
     <string name="switch_map_activity">SwitchMap operator</string>
     <string name="materialize_operator">Materialize Operator</string>
+    <string name="git_feed">Git Feed</string>
+    <string name="avatar">Avatar</string>
+    <string name="repoAction">%1$s, %2$s</string>
+    <string name="git_feed_demo">GitFeed Demo</string>
 </resources>

@@ -147,6 +147,12 @@
             android:label="@string/concat_map_demo">
         </activity>
 
+        <activity
+            android:name=".operators.combiningOperators.operators.merge.DemoMergeActivity"
+            android:label="@string/merge_demo">
+        </activity>
+
+
     </application>
 
 </manifest>

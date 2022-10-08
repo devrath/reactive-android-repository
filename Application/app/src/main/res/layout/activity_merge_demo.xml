@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_data_for_adding" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/screen_padding"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLeftObservableId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/left_observable"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <View
+            android:layout_width="@dimen/screen_padding"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRightObservableId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/right_observable"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

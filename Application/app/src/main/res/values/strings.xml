@@ -67,4 +67,8 @@
     <string name="concat_demo">Concat Demo</string>
     <string name="concat_with_demo">ConcatWith Demo</string>
     <string name="concat_map_demo">ConcatMap Demo</string>
+    <string name="merge_demo">Merge Demo</string>
+    <string name="left_observable">Left Observable</string>
+    <string name="right_observable">right Observable</string>
+    <string name="enter_data_for_adding">Enter data for publishing</string>
 </resources>

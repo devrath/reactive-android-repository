@@ -64,4 +64,5 @@
     <string name="merge">Merge</string>
     <string name="combining_operators_selection">Combining operators selection</string>
     <string name="starts_with_demo">Starts With Demo</string>
+    <string name="concat_demo">Concat Demo</string>
 </resources>

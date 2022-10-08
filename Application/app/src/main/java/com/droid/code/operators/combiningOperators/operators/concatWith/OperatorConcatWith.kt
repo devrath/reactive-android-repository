@@ -1,11 +1,11 @@
-package com.droid.code.operators.combiningOperators.operators.concat
+package com.droid.code.operators.combiningOperators.operators.concatWith
 
 import android.util.Log
 import com.droid.code.PROJECT_TAG
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 
-class OperatorConcat {
+class OperatorConcatWith {
 
     private val listOne = Observable.just("item-1","item-2","item-3")
     private val listTwo = Observable.just("item-4","item-5","item-6")
@@ -13,7 +13,8 @@ class OperatorConcat {
     private val subscriptions = CompositeDisposable()
 
     fun subscribeForSuccess() {
-        Observable.concat(listOne,listTwo).subscribe(
+
+        listOne.concatWith(listTwo).subscribe(
             {
                 Log.d(PROJECT_TAG,it)
             },{

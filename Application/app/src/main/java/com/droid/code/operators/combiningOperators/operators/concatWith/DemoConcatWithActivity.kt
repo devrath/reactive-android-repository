@@ -1,19 +1,19 @@
-package com.droid.code.operators.combiningOperators.operators.concat
+package com.droid.code.operators.combiningOperators.operators.concatWith
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityConcatDemoBinding
-import com.droid.code.databinding.ActivityStartsWithDemoBinding
+import com.droid.code.databinding.ActivityConcatWithBinding
 
-class DemoConcatActivity  : AppCompatActivity() {
+class DemoConcatWithActivity  : AppCompatActivity() {
 
-    private lateinit var binding: ActivityConcatDemoBinding
+    private lateinit var binding: ActivityConcatWithBinding
 
-    private val demo = OperatorConcat()
+    private val demo = OperatorConcatWith()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityConcatDemoBinding.inflate(layoutInflater)
+        binding = ActivityConcatWithBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setOnClickListeners()
     }

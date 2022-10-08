@@ -137,6 +137,11 @@
             android:label="@string/concat_demo">
         </activity>
 
+        <activity
+            android:name=".operators.combiningOperators.operators.concatWith.DemoConcatWithActivity"
+            android:label="@string/concat_with_demo">
+        </activity>
+
     </application>
 
 </manifest>

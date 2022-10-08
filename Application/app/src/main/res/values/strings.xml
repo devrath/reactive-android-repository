@@ -63,4 +63,5 @@
     <string name="concat_map">Concat Map</string>
     <string name="merge">Merge</string>
     <string name="combining_operators_selection">Combining operators selection</string>
+    <string name="starts_with_demo">Starts With Demo</string>
 </resources>

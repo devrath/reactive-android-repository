@@ -127,6 +127,11 @@
             android:label="@string/combining_operators_selection">
         </activity>
 
+        <activity
+            android:name=".operators.combiningOperators.operators.startsWith.DemoStartsWithActivity"
+            android:label="@string/starts_with_demo">
+        </activity>
+
 
 
     </application>

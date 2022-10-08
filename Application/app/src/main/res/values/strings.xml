@@ -66,4 +66,5 @@
     <string name="starts_with_demo">Starts With Demo</string>
     <string name="concat_demo">Concat Demo</string>
     <string name="concat_with_demo">ConcatWith Demo</string>
+    <string name="concat_map_demo">ConcatMap Demo</string>
 </resources>

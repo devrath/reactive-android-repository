@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.droid.code.databinding.ActivityCombiningOperatorsSelectionBinding
 import com.droid.code.databinding.ActivityFilterOperatorsSelectionBinding
 import com.droid.code.operators.combiningOperators.operators.concat.DemoConcatActivity
+import com.droid.code.operators.combiningOperators.operators.concatMap.DemoConcatMapActivity
 import com.droid.code.operators.combiningOperators.operators.concatWith.DemoConcatWithActivity
 import com.droid.code.operators.combiningOperators.operators.startsWith.DemoStartsWithActivity
 import com.droid.code.operators.filterOperators.operators.distinctUntilChangedCustom.DemoDistinctUntilChangedCustomActivity
@@ -31,6 +32,9 @@ class CombiningOperatorsSelectionActivity  : AppCompatActivity() {
         }
         binding.concatWithId.setOnClickListener {
             openActivity(DemoConcatWithActivity::class.java)
+        }
+        binding.concatMapId.setOnClickListener {
+            openActivity(DemoConcatMapActivity::class.java)
         }
     }
 

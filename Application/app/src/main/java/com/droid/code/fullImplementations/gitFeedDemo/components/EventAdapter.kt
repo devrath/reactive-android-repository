@@ -28,6 +28,8 @@ class EventAdapter(private val events: MutableList<Event>) : androidx.recyclervi
 
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
     holder.bind(events[position])
+
+
   }
 
   inner class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {

@@ -122,6 +122,12 @@
             android:label="@string/git_feed_demo">
         </activity>
 
+        <activity
+            android:name=".operators.combiningOperators.CombiningOperatorsSelectionActivity"
+            android:label="@string/combining_operators_selection">
+        </activity>
+
+
 
     </application>
 

@@ -57,4 +57,10 @@
     <string name="avatar">Avatar</string>
     <string name="repoAction">%1$s, %2$s</string>
     <string name="git_feed_demo">GitFeed Demo</string>
+    <string name="start_with">Start With</string>
+    <string name="concat">Concat</string>
+    <string name="concat_with">Concat With</string>
+    <string name="concat_map">Concat Map</string>
+    <string name="merge">Merge</string>
+    <string name="combining_operators_selection">Combining operators selection</string>
 </resources>

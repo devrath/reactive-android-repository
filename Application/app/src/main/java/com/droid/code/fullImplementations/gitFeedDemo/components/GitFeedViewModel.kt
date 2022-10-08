@@ -29,12 +29,15 @@ class GitFeedViewModel : ViewModel() {
     val apiResponse = gitHubApi.fetchEvents(repo, lastModified?.trim() ?: "").share()
 
     apiResponse
+        // You’re using the filter operator to filter out any response whose status code isn’t in the 200 to 300 range — i.e., any response that isn’t successful
         .filter { response ->
           (200..300).contains(response.code())
         }
+        // Map transforms the item emitted by your Observable. In the above code, you’re transforming the Response object into a List<AnyDict>? by using the body method on Response
         .map { response ->
           response.body()!!
         }
+        // Filtering out any response that provides an empty list of GitHub actions
         .filter { objects ->
           objects.isNotEmpty()
         }

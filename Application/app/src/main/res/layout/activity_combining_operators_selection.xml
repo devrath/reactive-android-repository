@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="@dimen/screen_padding"
+    tools:context=".operators.combiningOperators.CombiningOperatorsSelectionActivity">
+
+    <LinearLayout
+        android:id="@+id/containerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/startWithId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_with" />
+        <Button
+            android:id="@+id/concatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concat" />
+        <Button
+            android:id="@+id/concatWithId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concat_with" />
+        <Button
+            android:id="@+id/concatMapId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concat_map" />
+        <Button
+            android:id="@+id/mergeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/merge" />
+    </LinearLayout>
+
+</ScrollView>
+
